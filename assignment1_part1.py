@@ -21,3 +21,8 @@ def testListDivide():
     c = listDivide([30,54,63,98,100], divide=10)
     d = listDivide([])
     e = listDivide([1,2,3,4,5], 1)
+
+    while a == 2 and b == 5 and c == 2 and d == 0 and e == 5:
+        continue
+    else:
+        raise ListDivideException('Exception: data error')
