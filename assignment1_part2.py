@@ -19,6 +19,7 @@ class Book(object):
         self.title = title
         
     def display(self):
+        """displays text a certain format"""
         output = '{}, written by {}.'.format(self.title, self.author)
         return output
 
