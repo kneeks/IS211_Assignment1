@@ -3,11 +3,13 @@
 Week 1 task assignment
 """
 
+
 class ListDivideException(Exception):
         """Raise Exception"""
 
 
 def listDivide(numbers, divide=2):
+    """function that counts the correct numbers that are divided"""
     count = 0
     for x in numbers:
         if x % divide == 0:
@@ -16,6 +18,7 @@ def listDivide(numbers, divide=2):
 
 
 def testListDivide():
+    """test function in order to eliminate error"""
     a = listDivide([1,2,3,4,5])
     b = listDivide([2,4,6,8,10])
     c = listDivide([30,54,63,98,100], divide=10)
